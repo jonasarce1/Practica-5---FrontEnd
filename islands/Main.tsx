@@ -116,8 +116,6 @@ const Main: FunctionComponent = () => {
                 const projects: Project[] = [newProject];
                 document.cookie = `projects=${JSON.stringify(projects)}; path=/`;
             }
-
-            alert("Proyecto creado correctamente");
     
             handleCloseModalNewProject();
         }
@@ -174,7 +172,6 @@ const Main: FunctionComponent = () => {
             }
         }
 
-        alert(`Pelicula añadida al proyecto ${selectedProject}`);
         setShowModalMain(true);
         setShowModalExistingProject(false);
     }
